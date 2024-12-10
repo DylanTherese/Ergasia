@@ -1,2 +1,23 @@
-<h1>Workspaces#index</h1>
-<p>Find me in app/views/workspaces/index.html.erb</p>
+
+<div class="page-title col-5">
+  <h1>Gallery</h1>
+  <h6>Help us support lorem lorem Help us support</h6>
+</div>
+
+
+<div class="card-container">
+  <% @workspaces.each do |workspace| %>
+    <div class="card">
+      <%= link_to workspace_path(workspace), class: "card-link" do %>
+        <%# <% if workspace.photo.attached? %>
+          <%# <%= cl_image_tag workspace.photo.key, alt: "A workspace", class: "card-img"%>
+        <%# <% else %>
+          <%# image_tag "chair-svgrepo-com (1).svg", alt: "A Workspace", class: "card-img" %>
+        <%# <% end %>
+        <h3><%= workspace.title %></h3>
+        <p><%= workspace.price_per_day %>$ per day</p>
+        <%= link_to "Show Details", workspace_path(workspace), class: "button button-blue card-button"  %>
+      <% end %>
+    </div>
+  <% end %>
+</div>
