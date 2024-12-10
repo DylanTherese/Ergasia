@@ -5,12 +5,13 @@ class CreateWorkspaces < ActiveRecord::Migration[8.0]
       t.decimal :latitude
       t.decimal :longitude
       t.string :contact
-      t.decimal :price_per_day
+      t.integer :price_per_day
       t.time :check_in_time
       t.date :check_in_date
       t.time :check_out_time
       t.date :check_out_date
       t.text :description
+      t.string :address
       t.integer :max_guests
       t.integer :bedrooms
       t.integer :office
