@@ -56,7 +56,7 @@ end
 
 gem "sassc-rails"
 gem "bootstrap", "~> 5.2"
-gem "font-awesome-sass", "~> 6.1"
+gem "font-awesome-sass", "~> 6.7"
 gem "simple_form"
 gem "autoprefixer-rails"
 gem "hotwire-livereload"
