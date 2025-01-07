@@ -38,7 +38,7 @@ Workspace.destroy_all
 )
 
 
-# 2. Create the instances 🏗️
+
 puts "Creating workspaces..."
 
 Workspace.create!(
@@ -76,5 +76,5 @@ Workspace.create!(
   )
   puts "Created Loud Place With 2 Room"
 
-# 3. Display a message 🎉
+
 puts "Finished! Created #{Workspace.count} workspaces."
